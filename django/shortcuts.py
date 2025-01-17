@@ -3,6 +3,7 @@ This module collects helper functions and classes that "span" multiple levels
 of MVC. In other words, these functions/classes introduce controlled coupling
 for convenience's sake.
 """
+
 from django.http import (
     Http404,
     HttpResponse,
@@ -187,3 +188,8 @@ def resolve_url(to, *args, **kwargs):
 
     # Finally, fall back and assume it's a URL
     return to
+
+
+def make_toast():
+    """make toast."""
+    return "toast"
